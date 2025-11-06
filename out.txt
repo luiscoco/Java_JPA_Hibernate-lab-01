@@ -1,0 +1,310 @@
+2025-11-06 09:01:48,979 [edu.jpa.Launcher.main()] DEBUG [org.jboss.logging] - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2025-11-06 09:01:49,045 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.HibernatePersistenceProvider] - Located and parsed 1 persistence units; checking each
+2025-11-06 09:01:49,046 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.HibernatePersistenceProvider] - Checking persistence-unit [name=persistenceUnits.lab01, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [persistenceUnits.lab01]
+2025-11-06 09:01:49,048 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.boot.spi.ProviderChecker] - Persistence-unit [persistenceUnits.lab01] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2025-11-06 09:01:49,052 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.internal.util.LogHelper] - PersistenceUnitInfo [
+	name: persistenceUnits.lab01
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Learn%20JVA-014%20Java%20Persistence%20with%20Hibernate/Labs%201/Labs/jpa-lab-01/target/classes
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		jakarta.persistence.jdbc.password: 
+		hibernate.dialect: org.hibernate.dialect.MySQL57Dialect
+		hibernate.cache.use_second_level_cache: false
+		hibernate.format_sql: true
+		jakarta.persistence.jdbc.driver: com.mysql.cj.jdbc.Driver
+		jakarta.persistence.jdbc.user: root
+		jakarta.persistence.jdbc.url: jdbc:mysql://localhost/JPA_DB_01
+		hibernate.hbm2ddl.auto: create
+		hibernate.show_sql: true
+		hibernate.cache.use.query_cache: false]
+2025-11-06 09:01:49,054 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl] - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2025-11-06 09:01:49,056 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl] - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2025-11-06 09:01:49,058 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl] - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2025-11-06 09:01:49,088 [edu.jpa.Launcher.main()] INFO [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.5.2.Final
+2025-11-06 09:01:49,089 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2025-11-06 09:01:49,150 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.service.spi.ServiceBinding] - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2025-11-06 09:01:49,159 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.cache.internal.RegionFactoryInitiator] - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2025-11-06 09:01:49,168 [edu.jpa.Launcher.main()] INFO [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-11-06 09:01:49,212 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration boolean -> org.hibernate.type.BooleanType@1ecef0ac
+2025-11-06 09:01:49,215 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration boolean -> org.hibernate.type.BooleanType@1ecef0ac
+2025-11-06 09:01:49,215 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1ecef0ac
+2025-11-06 09:01:49,215 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@ab0a57
+2025-11-06 09:01:49,216 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration true_false -> org.hibernate.type.TrueFalseType@34478f18
+2025-11-06 09:01:49,217 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration yes_no -> org.hibernate.type.YesNoType@3047af65
+2025-11-06 09:01:49,217 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration byte -> org.hibernate.type.ByteType@672923d3
+2025-11-06 09:01:49,217 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration byte -> org.hibernate.type.ByteType@672923d3
+2025-11-06 09:01:49,218 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@672923d3
+2025-11-06 09:01:49,218 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration character -> org.hibernate.type.CharacterType@43bd48d7
+2025-11-06 09:01:49,218 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration char -> org.hibernate.type.CharacterType@43bd48d7
+2025-11-06 09:01:49,218 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@43bd48d7
+2025-11-06 09:01:49,219 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration short -> org.hibernate.type.ShortType@58948537
+2025-11-06 09:01:49,220 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration short -> org.hibernate.type.ShortType@58948537
+2025-11-06 09:01:49,220 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@58948537
+2025-11-06 09:01:49,221 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration integer -> org.hibernate.type.IntegerType@126d2c6a
+2025-11-06 09:01:49,221 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration int -> org.hibernate.type.IntegerType@126d2c6a
+2025-11-06 09:01:49,222 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@126d2c6a
+2025-11-06 09:01:49,222 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration long -> org.hibernate.type.LongType@7a4b40be
+2025-11-06 09:01:49,223 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration long -> org.hibernate.type.LongType@7a4b40be
+2025-11-06 09:01:49,223 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7a4b40be
+2025-11-06 09:01:49,224 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration float -> org.hibernate.type.FloatType@527d8d80
+2025-11-06 09:01:49,224 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration float -> org.hibernate.type.FloatType@527d8d80
+2025-11-06 09:01:49,224 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@527d8d80
+2025-11-06 09:01:49,225 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration double -> org.hibernate.type.DoubleType@474b3097
+2025-11-06 09:01:49,226 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration double -> org.hibernate.type.DoubleType@474b3097
+2025-11-06 09:01:49,226 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@474b3097
+2025-11-06 09:01:49,227 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2c59c2c0
+2025-11-06 09:01:49,227 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2c59c2c0
+2025-11-06 09:01:49,228 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@264f4e3b
+2025-11-06 09:01:49,228 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@264f4e3b
+2025-11-06 09:01:49,229 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration string -> org.hibernate.type.StringType@7f4a1366
+2025-11-06 09:01:49,229 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.String -> org.hibernate.type.StringType@7f4a1366
+2025-11-06 09:01:49,229 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6d2e238a
+2025-11-06 09:01:49,230 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2b678dce
+2025-11-06 09:01:49,230 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration url -> org.hibernate.type.UrlType@44a5e9f0
+2025-11-06 09:01:49,230 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.net.URL -> org.hibernate.type.UrlType@44a5e9f0
+2025-11-06 09:01:49,232 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Duration -> org.hibernate.type.DurationType@b8eafe6
+2025-11-06 09:01:49,232 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@b8eafe6
+2025-11-06 09:01:49,234 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Instant -> org.hibernate.type.InstantType@68665431
+2025-11-06 09:01:49,235 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@68665431
+2025-11-06 09:01:49,235 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4e8aa40b
+2025-11-06 09:01:49,235 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4e8aa40b
+2025-11-06 09:01:49,235 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@23f63373
+2025-11-06 09:01:49,235 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@23f63373
+2025-11-06 09:01:49,237 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1b7e4f28
+2025-11-06 09:01:49,238 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1b7e4f28
+2025-11-06 09:01:49,239 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@17019c0f
+2025-11-06 09:01:49,239 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@17019c0f
+2025-11-06 09:01:49,239 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@21a0ebc6
+2025-11-06 09:01:49,239 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@21a0ebc6
+2025-11-06 09:01:49,240 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2563dc77
+2025-11-06 09:01:49,241 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2563dc77
+2025-11-06 09:01:49,242 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration date -> org.hibernate.type.DateType@2c2c94d1
+2025-11-06 09:01:49,242 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2c2c94d1
+2025-11-06 09:01:49,243 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration time -> org.hibernate.type.TimeType@746ccfe6
+2025-11-06 09:01:49,243 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@746ccfe6
+2025-11-06 09:01:49,243 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration timestamp -> org.hibernate.type.TimestampType@3fbde13d
+2025-11-06 09:01:49,244 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3fbde13d
+2025-11-06 09:01:49,244 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3fbde13d
+2025-11-06 09:01:49,245 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7fe0f158
+2025-11-06 09:01:49,245 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration calendar -> org.hibernate.type.CalendarType@76cd4e4a
+2025-11-06 09:01:49,245 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@76cd4e4a
+2025-11-06 09:01:49,246 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@76cd4e4a
+2025-11-06 09:01:49,246 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@68fb0deb
+2025-11-06 09:01:49,247 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@4dd2c7fd
+2025-11-06 09:01:49,248 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration locale -> org.hibernate.type.LocaleType@625aec15
+2025-11-06 09:01:49,248 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@625aec15
+2025-11-06 09:01:49,249 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration currency -> org.hibernate.type.CurrencyType@4136c394
+2025-11-06 09:01:49,249 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4136c394
+2025-11-06 09:01:49,250 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6dce4663
+2025-11-06 09:01:49,250 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6dce4663
+2025-11-06 09:01:49,251 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration class -> org.hibernate.type.ClassType@3df5144d
+2025-11-06 09:01:49,252 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3df5144d
+2025-11-06 09:01:49,252 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@68d96017
+2025-11-06 09:01:49,253 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@68d96017
+2025-11-06 09:01:49,253 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5c057bfd
+2025-11-06 09:01:49,254 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration binary -> org.hibernate.type.BinaryType@5c3a80f7
+2025-11-06 09:01:49,254 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration byte[] -> org.hibernate.type.BinaryType@5c3a80f7
+2025-11-06 09:01:49,255 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration [B -> org.hibernate.type.BinaryType@5c3a80f7
+2025-11-06 09:01:49,255 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@20962f8d
+2025-11-06 09:01:49,256 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@20962f8d
+2025-11-06 09:01:49,256 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@20962f8d
+2025-11-06 09:01:49,256 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration row_version -> org.hibernate.type.RowVersionType@3204c3d5
+2025-11-06 09:01:49,257 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration image -> org.hibernate.type.ImageType@3277de43
+2025-11-06 09:01:49,258 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration characters -> org.hibernate.type.CharArrayType@336b4b8c
+2025-11-06 09:01:49,258 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration char[] -> org.hibernate.type.CharArrayType@336b4b8c
+2025-11-06 09:01:49,258 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration [C -> org.hibernate.type.CharArrayType@336b4b8c
+2025-11-06 09:01:49,259 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@73569cc2
+2025-11-06 09:01:49,259 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@73569cc2
+2025-11-06 09:01:49,259 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@73569cc2
+2025-11-06 09:01:49,260 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration text -> org.hibernate.type.TextType@41afabb9
+2025-11-06 09:01:49,260 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ntext -> org.hibernate.type.NTextType@42a346fd
+2025-11-06 09:01:49,260 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration blob -> org.hibernate.type.BlobType@5f3eef4
+2025-11-06 09:01:49,261 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5f3eef4
+2025-11-06 09:01:49,262 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@74297549
+2025-11-06 09:01:49,262 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration clob -> org.hibernate.type.ClobType@1f4c906e
+2025-11-06 09:01:49,263 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1f4c906e
+2025-11-06 09:01:49,263 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration nclob -> org.hibernate.type.NClobType@470a6a7d
+2025-11-06 09:01:49,263 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@470a6a7d
+2025-11-06 09:01:49,264 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4a5fafe9
+2025-11-06 09:01:49,264 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6f799e79
+2025-11-06 09:01:49,265 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration serializable -> org.hibernate.type.SerializableType@21b74f8e
+2025-11-06 09:01:49,266 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration object -> org.hibernate.type.ObjectType@79ef7b92
+2025-11-06 09:01:49,267 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@79ef7b92
+2025-11-06 09:01:49,267 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5087fa5e
+2025-11-06 09:01:49,267 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@77fd2631
+2025-11-06 09:01:49,268 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@73ba893c
+2025-11-06 09:01:49,268 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@10acc29a
+2025-11-06 09:01:49,268 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7f969fdb
+2025-11-06 09:01:49,268 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6144f2b6
+2025-11-06 09:01:49,269 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@469064cb
+2025-11-06 09:01:49,269 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@305ec691
+2025-11-06 09:01:49,275 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.BootstrapContextImpl] - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@2520bc8] into BootstrapContext; was [null]
+2025-11-06 09:01:49,275 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.BootstrapContextImpl] - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@48377507] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@31b4785]
+2025-11-06 09:01:49,297 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.BootstrapContextImpl] - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2025-11-06 09:01:49,297 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl] - ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2025-11-06 09:01:49,304 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2025-11-06 09:01:49,305 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2025-11-06 09:01:49,305 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2025-11-06 09:01:49,306 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2025-11-06 09:01:49,306 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2025-11-06 09:01:49,306 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2025-11-06 09:01:49,307 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2025-11-06 09:01:49,307 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-11-06 09:01:49,308 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2025-11-06 09:01:49,309 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2025-11-06 09:01:49,309 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2025-11-06 09:01:49,309 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2025-11-06 09:01:49,309 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-11-06 09:01:49,310 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory] - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2025-11-06 09:01:49,312 [edu.jpa.Launcher.main()] WARN [org.hibernate.orm.connections.pooling] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2025-11-06 09:01:49,316 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/JPA_DB_01]
+2025-11-06 09:01:49,317 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001001: Connection properties: {password=, user=root}
+2025-11-06 09:01:49,318 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001003: Autocommit mode: false
+2025-11-06 09:01:49,319 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - Initializing Connection pool with 1 Connections
+2025-11-06 09:01:49,321 [edu.jpa.Launcher.main()] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000115: Hibernate connection pool size: 20 (min=1)
+2025-11-06 09:01:49,403 [edu.jpa.Launcher.main()] WARN [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] - HHH000342: Could not obtain connection to query metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:172)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:116)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:409)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:275)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:249)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:453)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:98)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:146)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1372)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1406)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at edu.jpa.Launcher.main(Launcher.java:18)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-11-06 09:01:49,413 [edu.jpa.Launcher.main()] INFO [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2025-11-06 09:01:49,420 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder] - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-11-06 09:01:49,423 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] - HHH000422: Disabling contextual LOB creation as connection was null
+2025-11-06 09:01:49,424 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Error calling Driver#connect [null]
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:409)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:275)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:249)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:453)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:98)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:146)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1372)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1406)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at edu.jpa.Launcher.main(Launcher.java:18)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:546)
+	at java.base/sun.nio.ch.Net.connect(Net.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 40 more
+2025-11-06 09:01:49,426 [edu.jpa.Launcher.main()] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 0, SQLState: 08S01
+2025-11-06 09:01:49,427 [edu.jpa.Launcher.main()] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-06 09:01:49,428 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.service.spi.ServiceBinding] - Overriding existing service binding [org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.3.0:java (default-cli) on project jpa-lab-01: An exception occurred while executing the Java class. Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: Error calling Driver#connect: Communications link failure
+[ERROR] 
+[ERROR] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server. Connection refused: connect
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
