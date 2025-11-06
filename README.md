@@ -17,5 +17,6 @@ mvn -q exec:java
 
 Now we confirm in MySQL database the changes implemented
 
-![Uploading image.png…]()
+<img width="812" height="520" alt="image" src="https://github.com/user-attachments/assets/6f8ebeac-c94d-4921-9971-a9c35a341ba3" />
+
 
