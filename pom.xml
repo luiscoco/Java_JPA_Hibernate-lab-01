@@ -35,11 +35,12 @@
             <version>${hibernate.version}</version>
         </dependency>
 
-        <!-- MySQL JDBC driver (matches com.mysql.cj.jdbc.Driver) -->
+        <!-- MySQL JDBC driver for com.mysql.cj.jdbc.Driver -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
+            <scope>runtime</scope>
         </dependency>
 
         <!-- Log4j 1.x for PropertyConfigurator used in the code -->
@@ -58,6 +59,14 @@
                 <version>3.11.0</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>edu.jpa.Launcher</mainClass>
                 </configuration>
             </plugin>
         </plugins>

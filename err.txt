@@ -1,9 +1,34 @@
-WARNING: A restricted method in java.lang.System has been called
-WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/C:/Program%20Files/Apache/apache-maven-3.9.5/lib/jansi-2.4.0.jar)
-WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
-WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
 
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/C:/Program%20Files/Apache/apache-maven-3.9.5/lib/guava-32.0.1-jre.jar)
-WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+    <persistence-unit name="persistenceUnits.lab01">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>edu.jpa.entity.Company</class>
+        <properties>
+            <!--
+                        <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+                        <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:test"/>
+                        <property name="jakarta.persistence.jdbc.user" value="sa"/>
+                        <property name="jakarta.persistence.jdbc.password" value=""/>
+            -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost/JPA_DB_01"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="root"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+            <!--            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>-->
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+            <property name="hibernate.cache.use.query_cache" value="false"/>
+            <property name="hibernate.cache.use_second_level_cache" value="false"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
