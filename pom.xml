@@ -5,14 +5,62 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>edu.jpa.hibernate</groupId>
-        <artifactId>jpa-hibernate</artifactId>
-        <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-
+    <groupId>edu.jpa.hibernate</groupId>
     <artifactId>jpa-lab-01</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+    <name>jpa-lab-01</name>
+    <description>Standalone JPA + Hibernate lab project</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <hibernate.version>6.5.2.Final</hibernate.version>
+        <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
+    </properties>
+
+    <dependencies>
+        <!-- JPA API -->
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>${jakarta.persistence.version}</version>
+        </dependency>
+
+        <!-- Hibernate ORM (JPA provider) -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <!-- MySQL JDBC driver (matches com.mysql.cj.jdbc.Driver) -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+
+        <!-- Log4j 1.x for PropertyConfigurator used in the code -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
