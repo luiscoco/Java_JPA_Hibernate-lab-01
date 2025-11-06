@@ -1,4 +1,4 @@
-# JPA Hiberante - Lab 01
+# JPA Hiberante - Lab 01 - Entity Definition
 
 See the Youtube video: https://www.youtube.com/watch?v=eYsZJITC9ps
 
