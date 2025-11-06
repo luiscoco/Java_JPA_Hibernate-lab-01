@@ -1,5 +1,7 @@
 # JPA Hiberante - Lab 01
 
+See the Youtube video: https://www.youtube.com/watch?v=eYsZJITC9ps
+
 ## How to run the application
 
 Install MySQL and create a new database 
