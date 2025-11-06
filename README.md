@@ -2,7 +2,17 @@
 
 ## How to run the application
 
-Navigate into the JPA-LAB-01 folder.
+Install MySQL and create a new database 
+
+https://dev.mysql.com/downloads/installer/
+
+To create a new MySQL database named JPA_DB_01, you can run the following SQL command:
+
+```
+CREATE DATABASE JPA_DB_01;
+```
+
+Run VSCode and bavigate into the JPA-LAB-01 folder
 
 Run these two commands:
 
