@@ -12,6 +12,8 @@ To create a new MySQL database named JPA_DB_01, you can run the following SQL co
 CREATE DATABASE JPA_DB_01;
 ```
 
+<img width="682" height="339" alt="image" src="https://github.com/user-attachments/assets/37ad32d0-a549-4354-a9dd-7fc2f83c5843" />
+
 Run VSCode and bavigate into the JPA-LAB-01 folder
 
 Run these two commands:
